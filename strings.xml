@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">LogAction</string>
+    <string name="info_button">Info</string>
+    <string name="share_button">Compartir</string>
+    <string name="connect_button">Conectar</string>
+    <string name="locate_button">Localizar</string>
+    <string name="back_button">Volver</string>
+    <string name="share_code_text">Codigo para compartir</string>
+    <string name="copy_button">Copiar</string>
+    <string name="permissions_text">Un dispositivo está tratando de conectarse a ti</string>
+    <string name="allow_button">Permitir</string>
+    <string name="deny_button">Denegar</string>
+    <string name="shared_text">Tu dispositivo, ubicación e información del teclado están siendo compartidos a un dispositivo</string>
+    <string name="stop_button">Detener</string>
+    <string name="connect_text">Codigo para conectarte a un dispositivo</string>
+    <string name="connected_text">Conectado, estado del teclado:</string>
+    <string name="locate_text">Ingresa el código a localizar</string>
+    <string name="located_text">Información Localizada</string>
+    <string name="accessibility_service_description" />
+</resources>

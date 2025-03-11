@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volver"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"/>
+
+    <TextView
+        android:id="@+id/permissionsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Un dispositivo está tratando de conectarse a ti"
+        android:textSize="18sp"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/statusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estado: Esperando conexión..."
+        android:layout_below="@id/denyButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/holo_blue_dark"/>
+
+    <!-- Botón para permitir la conexión -->
+    <Button
+        android:id="@+id/allowButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aceptar"
+        android:layout_below="@id/permissionsText"
+        android:layout_marginTop="32dp"
+        android:visibility="gone"/> <!-- Inicialmente oculto -->
+
+    <!-- Botón para denegar la conexión -->
+    <Button
+        android:id="@+id/denyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rechazar"
+        android:layout_below="@id/allowButton"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"/> <!-- Inicialmente oculto -->
+
+</RelativeLayout>

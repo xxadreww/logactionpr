@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volver"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"/>
+
+    <TextView
+        android:id="@+id/connectedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conectado, estado del teclado:"
+        android:textSize="18sp"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/statusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estado: Conectado"
+        android:layout_below="@id/connectedText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/holo_green_dark"/>
+
+    <EditText
+        android:id="@+id/terminalBox"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/connectedText"
+        android:layout_marginTop="16dp"
+        android:inputType="textMultiLine"
+        android:background="@android:color/black"
+        android:textColor="@android:color/white"
+        android:text="Servidor conectado con éxito.\nConexión en espera del servidor."/>
+
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Detener"
+        android:layout_below="@id/terminalBox"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:id="@+id/connectedTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Esperando teclas..."
+        android:padding="16dp"
+        android:scrollbars="vertical" />
+
+</RelativeLayout>
